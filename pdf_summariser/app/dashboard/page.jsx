@@ -1,14 +1,12 @@
 'use client'
+export const dynamic = 'force-dynamic'
+
 import { useState, useEffect, useCallback } from 'react'
 import { supabase } from '@/lib/supabase'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
-import { Upload, LogOut, FileText, Clock, ChevronRight, X, Loader } from 'lucide-react'
+import { Upload, LogOut, FileText, Clock, ChevronRight, X } from 'lucide-react'
 import { useDropzone } from 'react-dropzone'
-
-'use client'
-export const dynamic = 'force-dynamic'
-import { useState } from 'react'
 
 export default function DashboardPage() {
   const router = useRouter()

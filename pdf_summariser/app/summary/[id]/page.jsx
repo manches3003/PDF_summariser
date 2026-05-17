@@ -1,14 +1,12 @@
 'use client'
+export const dynamic = 'force-dynamic'
+
 import { useEffect, useState } from 'react'
 import { supabase } from '@/lib/supabase'
 import { useRouter, useParams } from 'next/navigation'
 import Link from 'next/link'
 import { ArrowLeft, Download, FileText, Lightbulb, BookOpen } from 'lucide-react'
 import jsPDF from 'jspdf'
-
-'use client'
-export const dynamic = 'force-dynamic'
-import { useState } from 'react'
 
 
 export default function SummaryPage() {

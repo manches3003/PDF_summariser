@@ -1,12 +1,11 @@
 'use client'
+export const dynamic = 'force-dynamic'
+
 import { useState } from 'react'
 import { supabase } from '@/lib/supabase'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 
-'use client'
-export const dynamic = 'force-dynamic'
-import { useState } from 'react'
 
 export default function SignupPage() {
   const router = useRouter()
