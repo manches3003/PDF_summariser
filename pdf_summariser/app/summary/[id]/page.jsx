@@ -6,6 +6,11 @@ import Link from 'next/link'
 import { ArrowLeft, Download, FileText, Lightbulb, BookOpen } from 'lucide-react'
 import jsPDF from 'jspdf'
 
+'use client'
+export const dynamic = 'force-dynamic'
+import { useState } from 'react'
+
+
 export default function SummaryPage() {
   const { id } = useParams()
   const router = useRouter()

@@ -6,6 +6,10 @@ import Link from 'next/link'
 import { Upload, LogOut, FileText, Clock, ChevronRight, X, Loader } from 'lucide-react'
 import { useDropzone } from 'react-dropzone'
 
+'use client'
+export const dynamic = 'force-dynamic'
+import { useState } from 'react'
+
 export default function DashboardPage() {
   const router = useRouter()
   const [user, setUser] = useState(null)
